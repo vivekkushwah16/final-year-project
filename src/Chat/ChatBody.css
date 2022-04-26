@@ -155,6 +155,7 @@
 .chat__timestamp_container > .chat__timestamp > span > .MuiSvgIcon-root {
   font-size: 13px !important;
   margin-left: 2px;
+  /* fill: #1ca7a7; */
 }
 
 @media screen and (min-device-width: 600px) and (max-device-width: 800px) {

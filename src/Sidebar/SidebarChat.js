@@ -25,7 +25,7 @@ function SidebarChat({ id, name }) {
     return (
         <Link to={`/rooms/${id}`} className="sidebarChat__link">
             <div className="sidebarChat">
-                <Avatar>{name[0]}</Avatar>
+                <Avatar src={`https://i.pravatar.cc/150?u=${id}`}></Avatar>
                 <div className="sidebarChat__info">
                     <h2>{name}</h2> 
                     {messages[0]?.photo?

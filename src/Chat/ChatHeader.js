@@ -226,7 +226,7 @@ function ChatHeader({
         </Link>
       </Hidden>
 
-      <Avatar>{roomName[0]}</Avatar>
+      <Avatar src={`https://i.pravatar.cc/150?u=${roomId}`}></Avatar>
       <div className="chat__headerInfo">
         <h3>{roomName}</h3>
         <Hidden only={["xs"]}>

@@ -2,11 +2,12 @@
   display: flex;
   padding: 15px;
   cursor: pointer;
-  border-bottom: 1px solid #f6d6d6;
+  /* border-bottom: 1px solid #f6d6d6; */
+  border-bottom: 1px solid var(--border-list);
   /* height: 42px; */
 }
 .sidebarChat:hover {
-  background-color: #ebebeb;
+  background-color: var(--background-default-hover);
 }
 .sidebarChat__info {
   width: 80% !important;
@@ -15,7 +16,7 @@
 h2,
 h3 {
   margin: 0 0 0 15px;
-  color: #4a4a4a;
+  color: var(--primary-strong) !important;
   /* display: flex; */
   /* flex-direction: column; */
   text-overflow: ellipsis;

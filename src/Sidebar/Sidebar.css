@@ -5,17 +5,19 @@
   max-width: 30vw;
   min-width: 20vw;
   position: relative;
+  background-color: #202c33;
 }
 .sidebar__header {
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  border-right: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
 }
 .sidebar__header > div > .MuiAvatar-root {
   margin-left: 10px;
   margin-top: 5px;
   cursor: pointer;
+  
 }
 .sidebar__headerRight {
   display: flex;
@@ -26,9 +28,14 @@
 .sidebar__headerRight > .MuiSvgIcon-root {
   margin-right: 2vw;
   font-size: 24px !important;
+ 
+}
+
+.sidebar__headerRight .MuiIconButton-root {
+  color: var(--primary-strong) !important;
 }
 .sidebar__chats {
-  background-color: white;
+  background-color: #111b21;
   flex: 1;
   overflow: scroll;
   -ms-overflow-style: none; /* Internet Explorer 10+ */

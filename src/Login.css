@@ -10,8 +10,8 @@
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 10px 10px 18px #cbced1,
-                -10px -10px 18px #ffffff;
+    box-shadow: 0px 5px 8px #cbced1,
+                -0px -3px 3px #cbced1;
 }
 .login__container > img {
     object-fit: contain;
@@ -30,9 +30,11 @@
     margin: 0 auto;
     width: fit-content;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid lightgray;
     background-color: white !important;
+    box-shadow: 0px 1px 1px #cbced1;
+    font-weight: 500;
 }
 .login__withGoogle > img {
     height: 25px !important;

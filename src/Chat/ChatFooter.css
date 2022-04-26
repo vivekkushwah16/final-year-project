@@ -5,6 +5,7 @@
   height: 62px;
   border-top: 1px solid lightgray;
   transition: 1s;
+  background-color: var(--rich-text-panel-background);
 }
 .chat__footer > form {
   flex: 1;
@@ -15,6 +16,7 @@
   border-radius: 15px;
   padding: 10px;
   border: none;
+  color: var(--icon);
   /* word-wrap: break-word; */
   /* white-space: pre-wrap; */
   /* overflow-x: hidden; */
@@ -24,6 +26,7 @@
   min-height: 20px;
   max-height: 100px;
   resize: none;
+  background-color: var(--compose-input-background) !important;
 }
 .chat__footer > form > textarea:focus {
   outline: none;
@@ -34,8 +37,11 @@
 .chat__footer > .MuiSvgIcon-root {
   padding: 10px;
   color: gray;
+    
 }
-
+.chat__footer  .MuiIconButton-root {
+  color: var(--icon);
+}
 .chat__footer_emoji {
   display: none;
 }

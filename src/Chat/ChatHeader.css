@@ -5,12 +5,18 @@
     align-items: center;
     border-bottom: 1px solid lightgray;
     transition: 1s;
+    background-color: var(--panel-header-background) !important;
+    border-left: 1px solid var(--conversation-header-border);
+    border-right: 1px solid var(--conversation-header-border);
 }
 .chat__headerRight {
     display: flex;
     justify-content: space-between;
     min-width: 100px;
 } 
+.chat__headerRight .MuiIconButton-root {
+    color: var(--primary-strong) !important;
+  }
 .chat__header > .MuiAvatar-root {
     margin-left: 8px;
 }
@@ -20,9 +26,10 @@
 }
 .chat__headerInfo > h3 {
     font-weight: 500;
+    color: var(--primary-strong);
 }
 .chat__headerInfo > p {
-    color: #4a4a4a;
+    color: var(--primary-strong);
 }
 .chat__attachFile_drawerHeader {
     background-color: #00BFA5;

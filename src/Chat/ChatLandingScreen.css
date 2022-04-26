@@ -1,5 +1,6 @@
 .chat-landing-screen {
-  background-color: #f8f9fb !important;
+  /* background-color: #f8f9fb !important; */
+  background-color: var(--intro-background);
   color: #b5b6b7;
   /* align-content: center; */
   /* text-align: center; */

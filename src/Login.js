@@ -41,10 +41,10 @@ function Login() {
                 <span>Sign in with Google</span>
             </div>
 
-            <div className="login__withGoogle login__Anonymously" onClick={loginAnonymously}>
+            {/* <div className="login__withGoogle login__Anonymously" onClick={loginAnonymously}>
                 <PermIdentityIcon />
                 <span>Login Anonymously</span>
-            </div>
+            </div> */}
     
             </div>
         </div>

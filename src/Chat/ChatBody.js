@@ -7,6 +7,7 @@ import DrawerRightInfo from "./DrawerRightInfo";
 import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
 import AlarmIcon from "@material-ui/icons/Alarm";
 import DoneIcon from "@material-ui/icons/Done";
+import DoneAllIcon from '@material-ui/icons/DoneAll';
 //importing styles
 import "./ChatBody.css";
 
@@ -52,7 +53,11 @@ function ChatBody({
     }
   };
   useEffect(scrollToBottom, [messages]);
-
+useEffect(()=>{
+  if(messages){
+console.log("sends")
+  }
+},[messages])
   return (
     <div>
       <p className="chat__message_reminder">
@@ -182,7 +187,7 @@ function ChatBody({
                           minute: "numeric",
                         }
                       )}
-                      {message.uid === user.uid ? <DoneIcon /> : null}
+                      {message.uid === user.uid ? <DoneAllIcon style={{ color: "#43abcd" }}  /> : null}
                     </span>
                   </div>
                 ) : (
@@ -193,7 +198,7 @@ function ChatBody({
                         hour12: true,
                         minute: "numeric",
                       })}
-                      {message.uid === user.uid ? <AlarmIcon /> : null}
+                      {message.uid === user.uid ?<DoneAllIcon  /> : null}
                     </span>
                   </div>
                 )}

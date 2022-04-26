@@ -1,6 +1,6 @@
 /* Start: Drawer Right */
 .drawerRight__header { 
-    background-color: #EDEDED;
+    background-color: var(--panel-header-background) !important;
     height: 65px;
     padding-left: 8px;
     display: flex;
@@ -12,11 +12,11 @@
     /* margin-top: 50px; */
 }
 .drawerRight__header > .MuiIconButton-root { 
-    color: black;
+    color: var(--icon) !important;
     font-size: 18px;
 }
 .drawerRight__header > p { 
-    color: black;
+    color: var(--primary-strong) !important;
     font-weight: 400;
     font-size: 16px;
     margin-left: 10px;
@@ -51,13 +51,14 @@
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none; 
-    background-color: white;
+    /* background-color: white;    */
+     background-color: var(--background-default) !important;
     flex: 1;
     padding: 50px;
     text-align: center;
 }
 .drawerRight__content > p {
-    color: gray;
+    color: var(--primary-strong) !important;
 }
 .drawerRight__content::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -72,7 +73,7 @@
 }
 .drawerRight__content_searched_message > p {
     padding-left: 10px;
-    color: gray;
+    color: var(--primary-strong) !important;
     font-size: 14px;
 }
 .drawerRight__content_searched_message > .MuiDivider-root {
@@ -146,6 +147,6 @@
         background-color: #045E54;
     }
     .drawerRight__header > p {
-        color: white;
+        color: var(--primary-strong) !important;  color: var(--primary-strong) !important;
     }
 }
